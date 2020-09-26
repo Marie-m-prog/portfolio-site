@@ -1,27 +1,57 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header = () => (
   <header>
+    <nav className="nav">
       <ul>
-      <nav className="nav">
         <div className="nav-links">
-          <li>
-            <Link to="/">Home</Link>
+          
+          <li className="nav-link">
+            <Link
+              activeClass="active"
+              to="landing"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >Home</Link>
           </li>
-          <li>
-            <Link to="/about/">About</Link>
+          <li className="nav-link">
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >About</Link>
           </li>
-          <li>
-            <Link to="/portfolio/">Portfolio</Link>
+          <li className="nav-link">
+            <Link
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >Portfolio</Link>
           </li>
-          <li>
-            <Link to="/contact/">Contact</Link>
+          <li className="nav-link">
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >Contact</Link>
           </li>
+          
         </div>
-        </nav>
       </ul>
+    </nav>
   </header>
 )
 

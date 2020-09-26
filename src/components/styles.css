@@ -9,8 +9,17 @@
   box-sizing: border-box;
 }
 
-.landing {
+section {
   min-height: 100vh;
+}
+
+.underline {
+  width: 150px; 
+  border-top: 2px solid black; 
+  margin: 5px auto;
+}
+
+#landing {
   background: url("../images/danist-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -23,6 +32,8 @@
   justify-content: flex-end;
   min-height: 10vh;
   font-family: Raleway, sans-serif;
+  position: fixed;
+  top: 0;
 }
 
 .nav-links {
@@ -34,11 +45,7 @@
   padding-left: 3rem;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
+.nav-links a:hover {
   border-bottom: 2px solid black;
 }
 
@@ -48,6 +55,11 @@ a:hover {
   top: 40%;
   left: 10%;
   font-size: 2rem;
+}
+
+.section-text {
+  font-family: Raleway, sans-serif;
+  font-size: 3rem;
 }
 
 .intro {
