@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Raleway, sans-serif;
 }
 
 section {
@@ -50,7 +51,6 @@ section {
 }
 
 .title-text {
-  font-family: Raleway, sans-serif;
   position: absolute;
   top: 40%;
   left: 10%;
@@ -58,8 +58,8 @@ section {
 }
 
 .section-text {
-  font-family: Raleway, sans-serif;
   font-size: 3rem;
+  margin-top: 2%;
 }
 
 .intro {
@@ -71,6 +71,42 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.portfolio-item {
+  border-radius: 10px;
+  min-width: 400px;
+  min-height: 400px;
+  margin: 2%;
+  background-color: rgb(245, 245, 245);
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 80vh;
+  align-items: center;
+  padding: 5%;
+}
+
+.bunnyhops {
+  background-image: url('../images/bunnyhops.jpg');
+}
+
+.quiz{
+  background-image: url('../images/quiz.jpg');
+}
+
+.vanilla-todo {
+  background-image: url('../images/vanilla-todo.jpg');
+}
+
+.portfolio-item-image {
+  background-size: cover;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 

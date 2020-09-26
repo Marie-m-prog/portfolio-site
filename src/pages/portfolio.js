@@ -9,9 +9,27 @@ const Portfolio = () => (
         <div className="underline" />
       </div>
       <div className="portfolio-container">
-        <div className="portfolio-item"></div>
-        <div className="portfolio-item"></div>
-        <div className="portfolio-item"></div>
+        <div className="portfolio-item">
+          <div className="portfolio-item-image bunnyhops"></div>
+          <div className="portfolio-item-text">
+            <h1>Bunny Hops</h1>
+            <p></p>
+          </div>
+        </div>
+        <div className="portfolio-item">
+          <div className="portfolio-item-image quiz"></div>
+          <div className="portfolio-item-text">
+            <h1>{`</salt> Quiz`}</h1>
+            <p></p>
+          </div>
+        </div>
+        <div className="portfolio-item">
+          <div className="portfolio-item-image vanilla-todo"></div>
+          <div className="portfolio-item-text">
+            <h1>Vanilla Todo-list</h1>
+            <p></p>
+          </div>
+        </div>
       </div>
     </section>
   </div>
