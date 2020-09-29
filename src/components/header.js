@@ -1,13 +1,23 @@
 import PropTypes from "prop-types"
-import React from "react"
-import { Link, animateScroll as scroll } from "react-scroll";
+import React, { useEffect } from "react"
+import { Link } from "react-scroll";
 
-const Header = () => (
+const Header = () => {
+  const [scrolled, setScrolled] = React.useState(false);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    offset > 200 ? setScrolled(true) : setScrolled(false);
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, [])
+
+  return (
   <header>
-    <nav className="nav">
-      <ul>
-        <div className="nav-links">
-          
+    <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
+      <ul className="nav-links">
           <li className="nav-link">
             <Link
               activeClass="active"
@@ -48,12 +58,10 @@ const Header = () => (
               duration={500}
             >Contact</Link>
           </li>
-          
-        </div>
       </ul>
     </nav>
   </header>
-)
+)}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

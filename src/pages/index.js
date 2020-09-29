@@ -20,7 +20,7 @@ const IndexPage = () => {
             <span>
               {title.split("").map((char, index) => {
                 return (
-                  <Fade top cascade delay={index*50}><span key={index}>{char}</span></Fade>
+                  <Fade top cascade delay={index*40}><span key={index}>{char}</span></Fade>
                 )
               })}
             </span>
