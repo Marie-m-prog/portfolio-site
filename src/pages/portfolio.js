@@ -2,8 +2,8 @@ import React from "react"
 import "../components/styles.css"
 import Fade from 'react-reveal/Fade';
 import BunnyhopsImg from "../images/bunnyhops.jpg"
-import quizImg from "../images/quiz.jpg"
-import TodoImg from "../images/vanilla-todo.jpg"
+import quizImg from "../images/quiz.JPG"
+import TodoImg from "../images/vanilla-todo.JPG"
 
 const Portfolio = () => (
   <div>
