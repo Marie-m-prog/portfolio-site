@@ -1,6 +1,9 @@
 import React from "react"
 import "../components/styles.css"
 import Fade from 'react-reveal/Fade';
+import BunnyhopsImg from "../images/bunnyhops.jpg"
+import quizImg from "../images/quiz.jpg"
+import TodoImg from "../images/vanilla-todo.jpg"
 
 const Portfolio = () => (
   <div>
@@ -12,7 +15,7 @@ const Portfolio = () => (
       <div className="portfolio-container">
         <Fade bottom delay={100}>
         <div className="portfolio-item">
-          <div className="portfolio-item-image bunnyhops"></div>
+          <img className="portfolio-item-image bunnyhops" alt="" src={BunnyhopsImg}></img>
           <div className="portfolio-item-text">
             <h1>Bunny Hops</h1>
             <p>Website created with Gatsby connected to Contentful CMS.</p>
@@ -29,7 +32,7 @@ const Portfolio = () => (
         </Fade>
         <Fade bottom delay={200}>
         <div className="portfolio-item">
-          <div className="portfolio-item-image quiz"></div>
+          <img className="portfolio-item-image quiz" alt="" src={quizImg}></img>
           <div className="portfolio-item-text">
             <h1>{`</salt> Quiz`}</h1>
             <p>Small React application created as a one-day project</p>
@@ -46,7 +49,7 @@ const Portfolio = () => (
         </Fade>
         <Fade bottom delay={300}>
         <div className="portfolio-item">
-          <div className="portfolio-item-image vanilla-todo"></div>
+          <img className="portfolio-item-image vanilla-todo" alt="" src={TodoImg}></img>
           <div className="portfolio-item-text">
             <h1>Vanilla Todo-list</h1>
             <p>A single page application created with vanilla JavaScript</p>

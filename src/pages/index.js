@@ -5,7 +5,9 @@ import Header from "../components/header"
 import About from "../pages/about"
 import Portfolio from "../pages/portfolio"
 import Contact from "../pages/contact"
+import Footer from "../components/footer"
 import "../components/styles.css"
+import LandingImg from "../images/photoholgic-unsplash.jpg"
 
 const IndexPage = () => {
   let title = "Hello, my name is Marie";
@@ -14,6 +16,7 @@ const IndexPage = () => {
   <div>
     <SEO title="Home" />
     <section id="landing">
+      <img alt="" src={LandingImg}></img>
       <Header />
         <div className="title-text">
           <h1>
@@ -31,7 +34,7 @@ const IndexPage = () => {
     <About />
     <Portfolio />
     <Contact />
-    <div className="slider"></div>
+    <Footer />
   </div>
 )}
 

@@ -1,5 +1,6 @@
 import React from "react"
 import "../components/styles.css"
+import Fade from 'react-reveal/Fade';
 
 const Contact = () => (
   <div>
@@ -7,6 +8,21 @@ const Contact = () => (
       <h1 className="section-text" data-sal="slide-right" data-sal-delay="3000" data-sal-duration="1500" data-sal-easing="easing" style={{textAlign: 'center'}}>Contact</h1> 
       <div data-sal="slide-right" data-sal-duration="2000" data-sal-easing="easing">
             <div className="underline" />
+      </div>
+      <div className="contact-form">
+        <Fade top><h3>Want to get in touch?</h3></Fade>
+        <form name="contact" method="POST" data-netlify="true" autoComplete="off">
+          <p>
+            <Fade top><input type="text" name="name" placeholder="Name"/></Fade>  
+          </p>
+          <p>
+            <Fade top><input type="email" name="email" placeholder="Email Adress"/></Fade>
+          </p>
+          <p>
+            <Fade top><textarea name="message" placeholder="Message"></textarea></Fade>
+          </p>
+            <Fade top><button type="submit">Send</button></Fade>
+        </form>
       </div>
     </section>
   </div>

@@ -21,9 +21,14 @@ section {
 }
 
 #landing {
-  background: url("../images/photoholgic-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+#landing > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .nav {
@@ -83,7 +88,7 @@ section {
 .title-text > p {
   max-width: 60%;
   margin: 2% 0;
-  text-shadow: 1px 1px 1px rgb(73, 73, 73, 0.5);
+  text-shadow: 2px 2px 10px rgba(9, 7, 44, 0.938);
 }
 
 .section-text {
@@ -108,8 +113,8 @@ section {
 }
 
 .portfolio-item {
-  min-width: 400px;
-  min-height: 400px;
+  width: 400px;
+  height: 400px;
   margin: 2% 0;
   position: relative;
 }
@@ -130,23 +135,35 @@ section {
 }
 
 .bunnyhops {
-  background-image: url('../images/bunnyhops.jpg');
-}
-
-.quiz{
-  background-image: url('../images/quiz.jpg');
-}
-
-.vanilla-todo {
-  background-image: url('../images/vanilla-todo.jpg');
-}
-
-.portfolio-item-image {
-  background-size: cover;
+  object-fit: cover;
+  width: 100%;
   height: 200px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
+.quiz{
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.vanilla-todo {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* .portfolio-item-image {
+  background-size: cover;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+} */
 
 .hide {
   display: block;
@@ -218,10 +235,8 @@ section {
   grid-template-columns: 1fr 2fr;
 }
 
-.about-str > svg {
-  display: flex;
-  justify-self: center;
-  align-self: center;
+.icons {
+  margin: 25%;
   color: rgba(10, 0, 200, 0.5);
 }
 
@@ -250,27 +265,88 @@ section {
   border-radius: 50%;
 }
 
-/* .slider {
-  position: fixed;
-  top: 0;
-  left: 0;
+.about-me-text {
+  width: 60%;
+  text-align: center;
+  margin: 10% auto;
+  color: rgb(73, 73, 73)
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.contact-form > form {
+  width: 40%;
+}
+
+.contact-form > h3 {
+  color: rgba(10, 0, 200, 0.5);
+}
+
+.contact-form > form > p > input {
   width: 100%;
-  height: 100%;
-  transform: translateY(100%);
+  height: 5vh;
+  font-size: 18px;
+  padding-left: 10px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  box-shadow: none;
 }
 
-.intro-text {
-  color: rgb(227, 242, 255);
-  font-family: Raleway, sans-serif;
-  font-size: 2rem;
-} */
+.contact-form > form > p > textarea {
+  width: 100%;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+  height: 20vh;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  box-shadow: none;
 
-/* .hide {
-  background: black;
-  overflow: hidden;
 }
 
-.hide span {
-  transform: translateY(100%);
-  display: inline-block;
-} */
+.contact-form > form > p {
+  margin: 3%;
+}
+
+.contact-form > form > button {
+  margin: 3%;
+  padding: 3% 20% 3% 10px;
+  font-size: 18px;
+  background-color: rgba(10, 0, 200, 0.5);
+  color: white;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-form > form > button:hover {
+  border: 2px solid rgba(10, 0, 200, 0.5);
+  cursor: pointer;
+  background-color: white;
+  color:  rgba(10, 0, 200, 0.5);
+}
+
+.contact-form > form > p > input:focus {
+  outline: none;
+}
+
+.contact-form > form > p > textarea:focus {
+  outline: none;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  background-color: rgb(245, 245, 245)
+}
+
+footer > p {
+  padding: 2%;
+  color: rgb(73, 73, 73);
+}
