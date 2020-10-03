@@ -11,7 +11,7 @@ const Contact = () => (
       </div>
       <div className="contact-form">
         <Fade top><h3>Want to get in touch?</h3></Fade>
-        <form name="contact" method="POST" data-netlify="true" autoComplete="off">
+        <form netlify name="contact" method="POST" data-netlify="true" autoComplete="off">
           <p>
             <Fade top><input type="text" name="name" placeholder="Name"/></Fade>  
           </p>
