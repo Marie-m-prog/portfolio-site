@@ -6,7 +6,7 @@ import About from "../pages/about"
 import Portfolio from "../pages/portfolio"
 import Contact from "../pages/contact"
 import Footer from "../components/footer"
-import "../components/styles.css"
+import "../components/styles.scss"
 import LandingImg from "../images/photoholgic-unsplash.jpg"
 
 const IndexPage = () => {

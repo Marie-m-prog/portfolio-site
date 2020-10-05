@@ -17,7 +17,7 @@ const Contact = () => (
             <Fade top><input type="text" name="name" placeholder="Name"/></Fade>  
           </p>
           <p>
-            <Fade top><input type="email" name="email" placeholder="Email Adress"/></Fade>
+            <Fade top><input type="email" name="email" placeholder="Email Address"/></Fade>
           </p>
           <p>
             <Fade top><textarea name="message" placeholder="Message"></textarea></Fade>
