@@ -1,5 +1,4 @@
 import React from "react"
-import "../components/styles.css"
 import Fade from 'react-reveal/Fade';
 
 const Contact = () => (

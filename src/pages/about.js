@@ -1,5 +1,4 @@
 import React from "react"
-import "../components/styles.css"
 import ProfileImg from "../images/marie.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faFilm, faGraduationCap } from '@fortawesome/free-solid-svg-icons';

@@ -3,6 +3,8 @@
   src: local('Raleway', url(../fonts/Raleway-VariableFont_wght.ttf) format('truetype'));
 }
 
+$breakpint-tablet: 768px;
+
 // Base
 * {
   margin: 0;
@@ -50,12 +52,14 @@ section {
 }
 
 .nav-links {
+  width: 90%;
   display: flex;
+  justify-content: space-evenly;
   list-style: none;
   color: white;
 
-  li {
-    padding-left: 3rem;
+  @media(min-width: $breakpint-tablet) {
+    width: 50%;
   }
 
   a:hover {
@@ -86,13 +90,21 @@ section {
   position: absolute;
   top: 40%;
   left: 10%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 
+  @media(min-width: $breakpint-tablet) {
+    font-size: 2rem;
+  }
+
   p {
-    max-width: 60%;
+    max-width: 100%;
     margin: 2% 0;
     text-shadow: 2px 2px 10px rgba(9, 7, 44, 0.938);
+
+    @media(min-width: $breakpint-tablet) {
+      max-width: 60%;
+    }
   }
 }
 
@@ -114,27 +126,47 @@ section {
 
 // About Page
 .about-content {
-  margin: 0 5%;
+  margin: 0 2%;
   min-height: 80vh;
   display: flex;
+  flex-direction: column-reverse;
+
+  @media(min-width: $breakpint-tablet) {
+    flex-direction: row;
+    margin: 0 5%;
+  }
 }
 
 .about-me {
-  width: 50%;
+  margin-top: 2%;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media(min-width: $breakpint-tablet) {
+    width: 50%;
+    margin-top: 0;
+  }
 }
 
 .about-str {
-  width: 50%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
+
+  @media(min-width: $breakpint-tablet) {
+    width: 50%;
+  }
 }
 
 .icons {
-  margin: 25%;
+  margin-top: 25%;
   color: rgba(10, 0, 200, 0.5);
+
+  @media(min-width: $breakpint-tablet) {
+    margin: 25%;
+  }
 }
 
 .text-box {
@@ -163,10 +195,14 @@ section {
 }
 
 .about-me-text {
-  width: 60%;
+  width: 100%;
   text-align: center;
   margin: 10% auto;
-  color: rgb(73, 73, 73)
+  color: rgb(73, 73, 73);
+
+  @media(min-width: $breakpint-tablet) {
+    width: 60%;
+  }
 }
 
 // Portfolio
@@ -211,7 +247,6 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 80vh;
   padding: 0 5%;
 }
 
@@ -291,7 +326,11 @@ section {
   margin-top: 5%;
 
   form {
-    width: 40%;
+    width: 70%;
+
+    @media(min-width: $breakpint-tablet) {
+      width: 40%;
+    }
 
     p {
       margin: 3%;
