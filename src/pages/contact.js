@@ -13,13 +13,13 @@ const Contact = () => (
         <form name="contact" method="POST" data-netlify="true" autoComplete="off">
           <input type="hidden" name="form-name" value="contact" />
           <p>
-            <Fade top><input type="text" name="name" placeholder="Name"/></Fade>  
+            <Fade top><input required type="text" name="name" placeholder="Name"/></Fade>  
           </p>
           <p>
-            <Fade top><input type="email" name="email" placeholder="Email Address"/></Fade>
+            <Fade top><input required type="email" name="email" placeholder="Email Address"/></Fade>
           </p>
           <p>
-            <Fade top><textarea name="message" placeholder="Message"></textarea></Fade>
+            <Fade top><textarea required name="message" placeholder="Message"></textarea></Fade>
           </p>
             <Fade top><button type="submit">Send</button></Fade>
         </form>

@@ -1,7 +1,8 @@
 import React from "react"
 import ProfileImg from "../images/marie.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLaptopCode, faFilm, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faFilm, faGraduationCap, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Fade from 'react-reveal/Fade';
 
 const About = () => {
@@ -47,7 +48,12 @@ const About = () => {
             <div className="about-me-text">
               <Fade right delay={100}><p>As a lifelong learner I thrive when I am met with challenges and the chance to learn something new. I am motivated by creating solutions to problems, and believe that the value of a product comes from the value it provides for its users.</p></Fade>
             </div>
+            <div>
+              <a href="https://www.linkedin.com/in/mariewinthermadsen" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon" icon={faLinkedin} size="2x"/></a>
+              <a href="https://github.com/Marie-m-prog" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon" icon={faGithub} size="2x"/></a>
+              <a href="mailto:marie.winther@appliedtechnology.se"><FontAwesomeIcon className="brand-icon" icon={faEnvelope} size="2x"/></a>
             </div>
+          </div>
         </div>
       </section>
     </div>

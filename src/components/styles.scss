@@ -124,6 +124,31 @@ section {
   align-items: center;
 }
 
+.main-btn {
+  margin: 5px;
+  padding: 7px 25px;
+  border: 2px solid white;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+  font-size: 1.2rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+    .main-btn-arrow {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.main-btn-arrow {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
 // About Page
 .about-content {
   margin: 0 2%;
@@ -197,12 +222,17 @@ section {
 .about-me-text {
   width: 100%;
   text-align: center;
-  margin: 10% auto;
+  margin: 5% auto;
   color: rgb(73, 73, 73);
 
   @media(min-width: $breakpint-tablet) {
     width: 60%;
   }
+}
+
+.brand-icon {
+  color: rgb(73, 73, 73);
+  margin: 0 10px 0 10px;
 }
 
 // Portfolio
