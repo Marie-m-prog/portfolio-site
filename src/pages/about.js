@@ -49,9 +49,9 @@ const About = () => {
               <Fade right delay={100}><p>As a lifelong learner I thrive when I am met with challenges and the chance to learn something new. I am motivated by creating solutions to problems, and believe that the value of a product comes from the value it provides for its users.</p></Fade>
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/mariewinthermadsen" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon" icon={faLinkedin} size="2x"/></a>
-              <a href="https://github.com/Marie-m-prog" target="_blank" rel="noreferrer"><FontAwesomeIcon className="brand-icon" icon={faGithub} size="2x"/></a>
-              <a href="mailto:marie.winther@appliedtechnology.se"><FontAwesomeIcon className="brand-icon" icon={faEnvelope} size="2x"/></a>
+              <a href="https://www.linkedin.com/in/mariewinthermadsen" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FontAwesomeIcon className="brand-icon" icon={faLinkedin} size="2x"/></a>
+              <a href="https://github.com/Marie-m-prog" target="_blank" rel="noreferrer" aria-label="GitHub"><FontAwesomeIcon className="brand-icon" icon={faGithub} size="2x"/></a>
+              <a href="mailto:marie.winther@appliedtechnology.se" aria-label="email"><FontAwesomeIcon className="brand-icon" icon={faEnvelope} size="2x"/></a>
             </div>
           </div>
         </div>

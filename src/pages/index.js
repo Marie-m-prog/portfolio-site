@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react"
+import React from "react"
 import { Helmet } from "react-helmet"
 import Fade from 'react-reveal/Fade';
 import SEO from "../components/seo"
@@ -15,11 +15,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const IndexPage = () => {
-  const [status, setStatus] = useState('loading')
-
-  useEffect(() => {
-    setStatus('done');
-  }, [])
 
   return (
       <div>
@@ -30,33 +25,27 @@ const IndexPage = () => {
           <link rel="canonical" href="http://mariewmadsen.netlify.app" />
           <meta property="og:image" content={PreviewImg} />
         </Helmet>
-        {status === "loading" 
-          ? <div>Loading...</div> 
-          : 
-          <>
-            <section id="landing">
-              <img alt="" src={LandingImg}></img>
-              <Header />
-              <div className="title-text">
-                <Fade cascade top delay={1000}><h1>Hello, my name is Marie</h1></Fade>
-                <p>{`I’m a full-stack developer graduated from </salt> specialized in Javascript.`}</p>
-                <Link
-                  activeClass="active"
-                  className="main-btn"
-                  to="portfolio"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >View Portfolio<FontAwesomeIcon className="main-btn-arrow" icon={faAngleRight} /></Link>
-              </div>
-            </section>
-            <About />
-            <Portfolio />
-            <Contact />
-            <Footer />
-          </>
-      }
+          <section id="landing">
+            <img alt="" src={LandingImg}></img>
+            <Header />
+            <div className="title-text">
+              <Fade cascade top delay={1000}><h1>Hello, my name is Marie</h1></Fade>
+              <p>{`I’m a full-stack developer graduated from </salt> specialized in Javascript.`}</p>
+              <Link
+                activeClass="active"
+                className="main-btn"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >View Portfolio<FontAwesomeIcon className="main-btn-arrow" icon={faAngleRight} /></Link>
+            </div>
+          </section>
+          <About />
+          <Portfolio />
+          <Contact />
+          <Footer />
     </div>
 )}
 
