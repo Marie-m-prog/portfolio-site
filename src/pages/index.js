@@ -22,7 +22,7 @@ const IndexPage = () => {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Marie's Portfolio Site</title>
-          <link rel="canonical" href="http://mariewmadsen.netlify.app" />
+          <link rel="canonical" href="https://mariewmadsen.netlify.app" />
           <meta property="og:image" content={PreviewImg} />
         </Helmet>
           <section id="landing">
