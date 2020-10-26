@@ -1,9 +1,10 @@
 import React from "react"
 import ProfileImg from "../images/marie.jpg"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLaptopCode, faFilm, faGraduationCap, faEnvelope} from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import Fade from 'react-reveal/Fade';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLaptopCode, faFilm, faGraduationCap, faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import Stack from "../components/stack"
+import Fade from "react-reveal/Fade";
 
 const About = () => {
 
@@ -46,7 +47,10 @@ const About = () => {
               <Fade top delay={100}><img src={ProfileImg} alt=""></img></Fade>
             </div>
             <div className="about-me-text">
-              <Fade right delay={100}><p>As a lifelong learner I thrive when I am met with challenges and the chance to learn something new. I am motivated by creating solutions to problems, and believe that the value of a product comes from the value it provides for its users.</p></Fade>
+              <Fade right delay={100}>
+                <p>As a lifelong learner I thrive when I am met with challenges and the chance to learn something new. I am motivated by creating solutions to problems, and believe that the value of a product comes from the value it provides for its users.</p>
+                <p>When I'm not programming or learning new things online, I like to run, play computergames and cooking. At the moment I'm getting in shape for my first half-marathon, which will hopefully be this spring.</p>
+              </Fade>
             </div>
             <div>
               <a href="https://www.linkedin.com/in/mariewinthermadsen" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FontAwesomeIcon className="brand-icon" icon={faLinkedin} size="2x"/></a>
@@ -56,6 +60,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Stack />
     </div>
   )
 }

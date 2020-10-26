@@ -21,7 +21,6 @@ const Portfolio = () => {
                   id
                   title
                   description
-                  project
                   stack
                   url
                   repo

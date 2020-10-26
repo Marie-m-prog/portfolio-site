@@ -1,27 +1,40 @@
 [
   {
     "id": 1,
+    "title": "Dogsearch",
+    "description": "A database where you can search for dogs that are up for adoption.",
+    "stack": "React / Express / MongoDB / Passport",
+    "url": "https://dogsearch.herokuapp.com/",
+    "repo": "https://github.com/Marie-m-prog/dogsearch"
+  },
+  {
+    "id": 2,
     "title": "Bunny Hops",
     "description": "Website created with Gatsby connected to Contentful CMS.",
-    "project": "bunnyhops",
     "stack": "Gatsby / React / JavaScript / Contentful",
     "url": "https://bunnyhops.se",
     "repo": "https://github.com/Marie-m-prog/bunny-hops"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "</salt> Quiz",
     "description": "Small React application created as a one-day project",
-    "project": "quiz",
     "stack": "React / JavaScript / Express / Node.js",
     "url": "https://hackday-quiz.herokuapp.com/",
     "repo": "https://github.com/Marie-m-prog/Hackday"
   },
   {
-    "id": 3,
+    "id": 4,
+    "title": "Wastr",
+    "description": "A website that lets you track personal waste. Created as the graduation project at School of Applied Technology.",
+    "stack": "React / Express / GraphQL",
+    "url": "",
+    "repo": "https://github.com/Marie-m-prog/salt-graduation-project"
+  },
+  {
+    "id": 5,
     "title": "Vanilla Todo-list",
     "description": "A single page application created with vanilla JavaScript",
-    "project": "vanilla-todo",
     "stack": "JavaScript / Node.js",
     "url": "https://clever-murdock-c4f1e4.netlify.app/",
     "repo": "https://github.com/Marie-m-prog/Vanilla-JS-Todo"
