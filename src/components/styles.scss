@@ -13,6 +13,10 @@ $breakpint-tablet: 768px;
   font-family: Raleway, sans-serif;
 }
 
+body {
+  background-color: rgb(245, 245, 245);
+}
+
 section {
   min-height: 100vh;
 }
@@ -116,7 +120,7 @@ section {
 
 .section-text {
   font-size: 3rem;
-  margin-top: 2%;
+  padding-top: 2%;
 }
 
 .intro {
@@ -156,6 +160,10 @@ section {
 }
 
 // About Page
+#about {
+  background-color: white
+}
+
 .about-content {
   margin: 0 2%;
   min-height: 80vh;
@@ -234,6 +242,10 @@ section {
   @media(min-width: $breakpint-tablet) {
     width: 60%;
   }
+
+  p {
+    margin-bottom: 2%;
+  }
 }
 
 .brand-icon {
@@ -241,8 +253,40 @@ section {
   margin: 0 10px 0 10px;
 }
 
+.stack {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  color: rgb(73, 73, 73);
+  
+
+  @media(min-width: $breakpint-tablet) {
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+  }
+
+  .stack-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    background-color: white;
+
+    h2 {
+      margin: 10% 0;
+      border-bottom: 1px solid gray;
+    }
+
+    div {
+      margin: 3% 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+}
+
 // Portfolio
-%image-shared {
+.portfolio-item-image {
   object-fit: cover;
   width: 100%;
   height: 200px;
@@ -263,6 +307,7 @@ section {
   height: 400px;
   margin: 2% 0;
   position: relative;
+  margin: 2%;
 
   &:hover {
     .hide {
@@ -281,21 +326,13 @@ section {
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0 5%;
-}
 
-.bunnyhops {
-  @extend %image-shared;
-}
-
-.quiz{
-  @extend %image-shared;
-}
-
-.vanilla-todo {
-  @extend %image-shared;
+  @media(min-width: 985px) {
+    justify-content: flex-start;
+  }
 }
 
 .hide {
@@ -345,6 +382,10 @@ section {
 }
 
 // Contact Page
+#contact {
+  background-color: white;
+}
+
 %input-shared {
   width: 100%;
   font-size: 18px;
