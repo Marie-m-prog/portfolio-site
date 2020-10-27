@@ -1,9 +1,9 @@
 import React from "react"
 import Fade from 'react-reveal/Fade';
-import BunnyhopsImg from "../images/bunnyhops.jpg"
-import QuizImg from "../images/quiz.jpg"
-import TodoImg from "../images/vanilla-todo.jpg"
-import DogsearchImg from "../images/dogsearch.jpg"
+import BunnyhopsImg from "../images/bunnyhops.png"
+import QuizImg from "../images/quiz.png"
+import TodoImg from "../images/vanilla-todo.png"
+import DogsearchImg from "../images/dogsearch.png"
 import WastrImg from "../images/wastr.png"
 
 const ProjectPreview = (props) => {
