@@ -20,7 +20,7 @@ const About = () => {
             <Fade bottom delay={100}>
               <FontAwesomeIcon className="icons" icon={faLaptopCode} size="6x"/>
               <div className="text-box">
-                <h3>{`</salt>`}</h3>
+                <h3>{`School of Applied Technology`}</h3>
                 <p>2020</p>
                 <p>{`Graduated as a full stack developer from the School of Applied technology (</salt>) in Stockholm.`}</p>
               </div>
