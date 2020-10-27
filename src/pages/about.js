@@ -59,8 +59,8 @@ const About = () => {
             </div>
           </div>
         </div>
+        <Stack />
       </section>
-      <Stack />
     </div>
   )
 }

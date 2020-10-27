@@ -23,98 +23,96 @@ import GatsbyIcon from "../images/gatsby.svg"
 
 const Stack = () => {
   return (
-    <section>
-      <div className="stack">
-        <div className="stack-col">
-          <h2>JavaScript</h2>
-          <div>
-            <img src={JavaScriptIcon} alt="" style={{height: "75px", width: "75px"}}></img>
-            <p>JavaScript</p>
-          </div>
-          <div>
-            <FontAwesomeIcon icon={faReact} style={{color: "#5adafd"}} size="6x"/>
-            <p>React</p>
-          </div>
-          <div>
-            <img src={ReduxIcon} alt="" style={{height: "75px", width: "75px"}}></img>
-            <p>Redux</p>
-          </div>
-          <div>
-            <img src={GatsbyIcon} alt="" style={{height: "75px", width: "75px"}}></img>
-            <p>Gatbsy</p>
-          </div>
-          <div>
-            <FontAwesomeIcon icon={faNode} style={{color: "#82c91e"}} size="6x"/>
-          </div>
-          <div>
-            <img src={JQueryIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-          </div>
+    <div className="stack">
+      <div className="stack-col">
+        <h2>JavaScript</h2>
+        <div>
+          <img src={JavaScriptIcon} alt="" style={{height: "75px", width: "75px"}}></img>
+          <p>JavaScript</p>
         </div>
-        <div className="stack-col">
-          <h2>CSS</h2>
-          <div>
-            <img src={CSSIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-          </div>
-          <div>
-            <img src={SASSIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-          </div>
-          <div>
-            <img src={BootstrapIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-            <p>Bootstrap</p>
-          </div>
-          <div>
-            <img src={MaterialIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-            <p>Material-UI</p>
-          </div>
-          <div>
-            <img src={TailwindIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-            <p>Tailwind CSS</p>
-          </div>
+        <div>
+          <FontAwesomeIcon icon={faReact} style={{color: "#5adafd"}} size="6x"/>
+          <p>React</p>
         </div>
-        <div className="stack-col">
-          <h2>Backend</h2>
-          <div>
-            <img src={ExpressIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-          </div>
-          <div>
-            <img src={MongoIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-          </div>
-          <div>
-            <img src={PostgreSQLIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-            <p>PostgreSQL</p>
-          </div>
-          <div>
-            <img src={GraphQLIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-            <p>GraphQL</p>
-          </div>
+        <div>
+          <img src={ReduxIcon} alt="" style={{height: "75px", width: "75px"}}></img>
+          <p>Redux</p>
         </div>
-        <div className="stack-col">
-          <h2>Tools</h2>
-          <div>
-            <img src={GitIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-            <p>Git</p>
-          </div>
-          <div>
-            <img src={VisualStudioIcon} alt="" style={{height: "75px", width: "75px"}}></img>
-            <p>Visual Studio Code</p>
-          </div>
-          <div>
-            <img src={WebpackIcon} alt="" style={{height: "75px", width: "75px"}}></img>
-            <p>Webpack</p>
-          </div>
-          <div>
-            <img src={DockerIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-          </div>
-          <div>
-            <img src={JestIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-            <p>Jest</p>
-          </div>
-          <div>
-            <img src={MochaIcon} alt="" style={{height: "100px", width: "100px"}}></img>
-          </div>
+        <div>
+          <img src={GatsbyIcon} alt="" style={{height: "75px", width: "75px"}}></img>
+          <p>Gatbsy</p>
+        </div>
+        <div>
+          <FontAwesomeIcon icon={faNode} style={{color: "#82c91e"}} size="6x"/>
+        </div>
+        <div>
+          <img src={JQueryIcon} alt="" style={{height: "100px", width: "100px"}}></img>
         </div>
       </div>
-  </section>
+      <div className="stack-col">
+        <h2>CSS</h2>
+        <div>
+          <img src={CSSIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+        </div>
+        <div>
+          <img src={SASSIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+        </div>
+        <div>
+          <img src={BootstrapIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+          <p>Bootstrap</p>
+        </div>
+        <div>
+          <img src={MaterialIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+          <p>Material-UI</p>
+        </div>
+        <div>
+          <img src={TailwindIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+          <p>Tailwind CSS</p>
+        </div>
+      </div>
+      <div className="stack-col">
+        <h2>Backend</h2>
+        <div>
+          <img src={ExpressIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+        </div>
+        <div>
+          <img src={MongoIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+        </div>
+        <div>
+          <img src={PostgreSQLIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+          <p>PostgreSQL</p>
+        </div>
+        <div>
+          <img src={GraphQLIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+          <p>GraphQL</p>
+        </div>
+      </div>
+      <div className="stack-col">
+        <h2>Tools</h2>
+        <div>
+          <img src={GitIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+          <p>Git</p>
+        </div>
+        <div>
+          <img src={VisualStudioIcon} alt="" style={{height: "75px", width: "75px"}}></img>
+          <p>Visual Studio Code</p>
+        </div>
+        <div>
+          <img src={WebpackIcon} alt="" style={{height: "75px", width: "75px"}}></img>
+          <p>Webpack</p>
+        </div>
+        <div>
+          <img src={DockerIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+        </div>
+        <div>
+          <img src={JestIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+          <p>Jest</p>
+        </div>
+        <div>
+          <img src={MochaIcon} alt="" style={{height: "100px", width: "100px"}}></img>
+        </div>
+      </div>
+    </div>
 )}
 
 export default Stack
