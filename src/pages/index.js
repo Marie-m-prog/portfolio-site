@@ -13,9 +13,10 @@ import PreviewImg from "../images/site-preview.jpg"
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import netlifyIdentity from 'netlify-identity-widget'
 
 const IndexPage = () => {
-
+  netlifyIdentity.init()
   return (
       <div>
         <SEO title="Home" />
@@ -24,6 +25,7 @@ const IndexPage = () => {
           <title>Marie's Portfolio Site</title>
           <link rel="canonical" href="https://mariewmadsen.netlify.app" />
           <meta property="og:image" content={PreviewImg} />
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Helmet>
           <section id="landing">
             <img alt="" src={LandingImg}></img>
