@@ -8,7 +8,7 @@ import Portfolio from "../pages/portfolio"
 import Contact from "../pages/contact"
 import Footer from "../components/footer"
 import "../components/styles.scss"
-import LandingImg from "../images/photoholgic-unsplash.jpg"
+import LandingImg from "../images/cool-background.png"
 import PreviewImg from "../images/site-preview.jpg"
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -28,18 +28,20 @@ const IndexPage = () => {
           <section id="landing">
             <img alt="" src={LandingImg}></img>
             <Header />
-            <div className="title-text">
-              <Fade cascade top delay={1000}><h1>Hello, my name is Marie</h1></Fade>
-              <p>{`I’m a full-stack developer graduated from </salt> specialized in Javascript.`}</p>
-              <Link
-                activeClass="active"
-                className="main-btn"
-                to="portfolio"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >View Portfolio<FontAwesomeIcon className="main-btn-arrow" icon={faAngleRight} /></Link>
+            <div className="landing-container">
+              <div className="title-text">
+                <Fade top delay={1000}><h1>Hello, my name is Marie</h1></Fade>
+                <p>{`I’m a full-stack developer graduated from </salt> specialized in Javascript.`}</p>
+                <Link
+                  activeClass="active"
+                  className="main-btn"
+                  to="portfolio"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >View Portfolio<FontAwesomeIcon className="main-btn-arrow" icon={faAngleRight} /></Link>
+              </div>
             </div>
           </section>
           <About />

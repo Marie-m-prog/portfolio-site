@@ -7,7 +7,7 @@ const Header = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    offset > 200 ? setScrolled(true) : setScrolled(false);
+    offset > 100 ? setScrolled(true) : setScrolled(false);
   }
 
   useEffect(() => {
@@ -17,6 +17,10 @@ const Header = () => {
   return (
   <header>
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
+      <div className="header-text">
+        <h1>Marie W. Madsen</h1>
+        <p>Fullstack Javascript Developer</p>
+      </div>
       <ul className="nav-links">
           <li className="nav-link">
             <Link

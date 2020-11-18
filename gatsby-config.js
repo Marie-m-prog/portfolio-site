@@ -30,5 +30,6 @@ module.exports = {
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-netlify-cms`,
   ],
 }

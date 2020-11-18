@@ -1,6 +1,11 @@
 @font-face {
-  font-family: 'Raleway';
-  src: local('Raleway', url(../fonts/Raleway-VariableFont_wght.ttf) format('truetype'));
+  font-family: Raleway;
+  src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Tomatoes;
+  src: url('../fonts/Tomatoes-O8L8.ttf') format('truetype');
 }
 
 $breakpint-tablet: 768px;
@@ -32,10 +37,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   min-height: 10vh;
   font-family: Raleway, sans-serif;
   position: fixed;
-  top: 0;
+
   width: 100%;
   z-index: 99;
   transition: ease-in-out 0.5s;
@@ -43,6 +49,7 @@ section {
 
 .scrolled {
   background-color: white;
+  top: 0;
 
   .nav-links {
     color: black;
@@ -59,6 +66,30 @@ section {
       }
     }
   }
+
+  .header-text {
+    display: none;
+  }
+}
+
+.header-text {
+  text-align: center;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5% 0;
+
+  h1 {
+    font-family: Tomatoes, serif;
+    font-weight: 200;
+    font-size: 28px;
+    color: yellow;
+  }
+
+  p {
+    color: rgb(189, 189, 189);
+  }
 }
 
 .nav-links {
@@ -66,7 +97,6 @@ section {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  color: white;
 
   @media(min-width: $breakpint-tablet) {
     width: 50%;
@@ -88,33 +118,42 @@ section {
 #landing {
   height: 100vh;
   width: 100%;
+  // background-color: rgb(31, 30, 34);
+  // background-color: rgb(47, 48, 48);
+  color: white;
 
   img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    position: absolute;
   }
 }
 
-.title-text {
+.landing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 10%;
+}
+
+.title-text {
   font-size: 1.5rem;
-  color: white;
+  font-weight: lighter;
+  padding: 10% 0;
 
   @media(min-width: $breakpint-tablet) {
     font-size: 2rem;
   }
 
+  h1 {
+    font-weight: 400;
+  }
+
   p {
     max-width: 100%;
     margin: 2% 0;
-    text-shadow: 2px 2px 10px rgba(9, 7, 44, 0.938);
-
-    @media(min-width: $breakpint-tablet) {
-      max-width: 60%;
-    }
   }
 }
 
@@ -157,6 +196,16 @@ section {
 .main-btn-arrow {
   margin-left: 10px;
   margin-right: 0;
+}
+
+.collage-container {
+  max-width: 600px;
+
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 // About Page
