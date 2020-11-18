@@ -13,10 +13,8 @@ import PreviewImg from "../images/site-preview.jpg"
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import netlifyIdentity from 'netlify-identity-widget'
 
 const IndexPage = () => {
-  netlifyIdentity.init()
   return (
       <div>
         <SEO title="Home" />
