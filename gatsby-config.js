@@ -1,3 +1,6 @@
+const { CONTENTFUL_SPACE_ID } = process.env;
+const { CONTENTFUL_ACCESS_TOKEN } = process.env;
+
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
@@ -27,9 +30,15 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+      spaceId: `${CONTENTFUL_SPACE_ID}`,
+      accessToken: `${CONTENTFUL_ACCESS_TOKEN}`,
+      },
+    },
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-fontawesome-css`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-sass`,,
   ],
 }
