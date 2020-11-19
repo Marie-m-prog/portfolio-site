@@ -23,7 +23,6 @@ const IndexPage = () => {
           <title>Marie's Portfolio Site</title>
           <link rel="canonical" href="https://mariewmadsen.netlify.app" />
           <meta property="og:image" content={PreviewImg} />
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Helmet>
           <section id="landing">
             <img alt="" src={LandingImg}></img>
@@ -31,7 +30,7 @@ const IndexPage = () => {
             <div className="landing-container">
               <div className="title-text">
                 <Fade top delay={1000}><h1>Hello, my name is Marie</h1></Fade>
-                <p>{`I’m a full-stack developer graduated from </salt> specialized in Javascript.`}</p>
+                <p>{`I’m a fullstack developer graduated from </salt> specialized in JavaScript.`}</p>
                 <Link
                   activeClass="active"
                   className="main-btn"
