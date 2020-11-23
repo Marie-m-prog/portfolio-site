@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from "gatsby";
 import ProjectPreview from "../components/project-preview"
 
 const Portfolio = () => {
-  // const previewList = 
 
   return (
   <div>

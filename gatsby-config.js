@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const { CONTENTFUL_SPACE_ID } = process.env;
 const { CONTENTFUL_ACCESS_TOKEN } = process.env;
 
@@ -28,6 +30,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+        icon: `${__dirname}/src/images/star.png`,
       },
     },
     {
@@ -39,6 +42,6 @@ module.exports = {
     },
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-fontawesome-css`,
-    `gatsby-plugin-sass`,,
+    `gatsby-plugin-sass`,
   ],
 }
