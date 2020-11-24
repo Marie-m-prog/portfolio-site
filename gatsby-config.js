@@ -1,7 +1,17 @@
 require('dotenv').config()
 
-const { CONTENTFUL_SPACE_ID } = process.env;
-const { CONTENTFUL_ACCESS_TOKEN } = process.env;
+const contentfulConfig = {
+  spaceId: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+};
+
+const { spaceId, accessToken } = contentfulConfig;
+
+if (!spaceId || !accessToken) {
+  throw new Error(
+    'Contentful spaceId and the access token need to be provided.'
+  );
+}
 
 module.exports = {
   siteMetadata: {
@@ -29,19 +39,18 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `${__dirname}/src/images/star.png`,
+        display: `standalone`,
+        icon: `src/images/star.png`,
+        include_favicon: false,
       },
     },
     {
       resolve: `gatsby-source-contentful`,
-      options: {
-      spaceId: `${CONTENTFUL_SPACE_ID}`,
-      accessToken: `${CONTENTFUL_ACCESS_TOKEN}`,
-      },
+      options: contentfulConfig,
     },
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-sass`,
+    `@contentful/gatsby-transformer-contentful-richtext`,
   ],
 }
