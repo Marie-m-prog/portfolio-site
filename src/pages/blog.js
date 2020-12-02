@@ -7,14 +7,22 @@ const BlogPage = ({ data }) => {
   const posts = data.allContentfulBlog.edges;
 
   return (
-	<div id='blog'>
-    {console.log('here are the posts')}
-    <SEO title="Blog" />
-    <h1>Blog</h1>
-		<ul>{posts.map(post => 
-      <PostPreview node={post.node}/>
-    )}</ul>
-	</div>
+    <div id='blog'>
+      <SEO title="Blog" />
+      <div className="posts-container">
+        <div className="header-text">
+          <h1 className="name">Marie W. Madsen</h1>
+          <p>Fullstack JavaScript Developer</p>
+        </div>
+        <div className="welcome">
+          <h1>Welcome to my blog!</h1>
+          <p>This is a space for me to process and share the things I've learned on my journey to become a developer</p>
+        </div>
+        <ul >{posts.map(post => 
+          <PostPreview node={post.node}/>
+        )}</ul>
+      </div>
+    </div>
 	)
 }
 
@@ -30,6 +38,11 @@ query BlogQuery {
         title
         content {
           raw
+        }
+        previewImg {
+          fluid(maxWidth: 200, quality: 100) {
+            ...GatsbyContentfulFluid
+          }
         }
       }
     }

@@ -3,7 +3,7 @@ import ProfileImg from "../images/marie.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLaptopCode, faFilm, faGraduationCap, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import Stack from "../components/stack"
+import Stack from "./stack"
 import Fade from "react-reveal/Fade";
 
 const About = () => {

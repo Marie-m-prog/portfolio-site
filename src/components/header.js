@@ -18,7 +18,7 @@ const Header = () => {
   <header>
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-text">
-        <h1>Marie W. Madsen</h1>
+        <h1 className="name">Marie W. Madsen</h1>
         <p>Fullstack JavaScript Developer</p>
       </div>
       <ul className="nav-links">

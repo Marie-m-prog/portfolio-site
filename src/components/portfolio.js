@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby";
-import ProjectPreview from "../components/project-preview"
+import ProjectPreview from "./project-preview"
 
 const Portfolio = () => {
 

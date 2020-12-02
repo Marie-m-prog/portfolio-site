@@ -9,19 +9,19 @@ const Contact = () => (
             <div className="underline" />
       </div>
       <div className="contact-form">
-        <Fade top><h3>Want to get in touch?</h3></Fade>
+        <Fade bottom><h3>Want to get in touch?</h3></Fade>
         <form name="contact" method="POST" data-netlify="true" autoComplete="off" action="/contact-success">
           <input type="hidden" name="form-name" value="contact" />
           <p>
-            <Fade top><input required type="text" name="name" placeholder="Name"/></Fade>  
+            <Fade bottom><input required type="text" name="name" placeholder="Name"/></Fade>  
           </p>
           <p>
-            <Fade top><input required type="email" name="email" placeholder="Email Address"/></Fade>
+            <Fade bottom><input required type="email" name="email" placeholder="Email Address"/></Fade>
           </p>
           <p>
-            <Fade top><textarea required name="message" placeholder="Message"></textarea></Fade>
+            <Fade bottom><textarea required name="message" placeholder="Message"></textarea></Fade>
           </p>
-            <Fade top><button type="submit">Send</button></Fade>
+            <Fade bottom><button type="submit">Send</button></Fade>
         </form>
       </div>
     </section>
