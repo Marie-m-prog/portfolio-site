@@ -36,9 +36,6 @@ query BlogQuery {
         date(formatString: "DD/MM/YYYY")
         slug
         title
-        content {
-          raw
-        }
         previewImg {
           fluid(maxWidth: 200, quality: 100) {
             ...GatsbyContentfulFluid
