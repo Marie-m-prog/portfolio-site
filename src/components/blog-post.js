@@ -4,9 +4,10 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { graphql } from "gatsby";
 
 const Text = ({ node, children }) => {
-	return <div className="align-center">{children}</div>
+	return <div className="post-content">{children}</div>
 }
 
 const Code = ({ children }) => {
@@ -35,11 +36,11 @@ const BlogPost = ({ data }) => {
       <SEO title={title} />
       <div className="posts-container">
         <div className="header-text">
-          <h1 className="name">Marie W. Madsen</h1>
+          <a href="/"><h1 className="name">Marie W. Madsen</h1></a>
           <p>Fullstack JavaScript Developer</p>
         </div>
-        <div className="welcome">
-          <h1>{title}</h1>
+        <div className="blog-posts-container">
+          <h1 className="posts-title">{title}</h1>
           {text}
         </div>
       </div>

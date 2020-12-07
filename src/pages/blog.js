@@ -11,11 +11,11 @@ const BlogPage = ({ data }) => {
       <SEO title="Blog" />
       <div className="posts-container">
         <div className="header-text">
-          <h1 className="name">Marie W. Madsen</h1>
+          <a href="/"><h1 className="name">Marie W. Madsen</h1></a>
           <p>Fullstack JavaScript Developer</p>
         </div>
-        <div className="welcome">
-          <h1>Welcome to my blog!</h1>
+        <div className="blog-posts-container">
+          <h1 className="posts-title">Welcome to my blog!</h1>
           <p>This is a space for me to process and share the things I've learned on my journey to become a developer</p>
         </div>
         <ul >{posts.map(post => 

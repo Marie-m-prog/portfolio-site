@@ -3,8 +3,6 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const PostPreview = ({ node }) => {
-	// const text = documentToReactComponents(JSON.parse(node.content.raw), options)
-
   return (
 		<Link to={`/blog/${node.slug}`}>
 			<li key={node.date} className="post-item">

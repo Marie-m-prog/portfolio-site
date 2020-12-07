@@ -23,6 +23,7 @@ const IndexPage = () => {
           <title>Marie's Portfolio Site</title>
           <link rel="canonical" href="https://mariewmadsen.netlify.app" />
           <meta property="og:image" content={PreviewImg} />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
         </Helmet>
           <section id="landing">
             <img alt="" src={LandingImg}></img>
