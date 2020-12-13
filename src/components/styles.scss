@@ -1,11 +1,11 @@
 @font-face {
   font-family: Raleway;
-  src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+  src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Tomatoes;
-  src: url('../fonts/Tomatoes-O8L8.ttf') format('truetype');
+  src: url("../fonts/Tomatoes-O8L8.ttf") format("truetype");
 }
 
 $breakpint-tablet: 768px;
@@ -27,8 +27,8 @@ section {
 }
 
 .underline {
-  width: 150px; 
-  border-top: 2px solid black; 
+  width: 150px;
+  border-top: 2px solid black;
   margin: 5px auto;
 }
 
@@ -41,10 +41,15 @@ section {
   min-height: 10vh;
   font-family: Raleway, sans-serif;
   position: fixed;
+  margin-top: 5%;
 
   width: 100%;
   z-index: 99;
   transition: ease-in-out 0.5s;
+
+  @media (min-width: $breakpint-tablet) {
+    margin-top: 0;
+  }
 }
 
 .scrolled {
@@ -97,9 +102,11 @@ section {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
+  margin-top: 5%;
 
-  @media(min-width: $breakpint-tablet) {
+  @media (min-width: $breakpint-tablet) {
     width: 50%;
+    margin-top: 0;
   }
 
   a:hover {
@@ -118,8 +125,6 @@ section {
 #landing {
   height: 100vh;
   width: 100%;
-  // background-color: rgb(31, 30, 34);
-  // background-color: rgb(47, 48, 48);
   color: white;
 
   img {
@@ -131,29 +136,37 @@ section {
 }
 
 .landing-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 10%;
+
+  @media (min-width: $breakpint-tablet) {
+    width: 70%;
+    position: none;
+  }
 }
 
 .title-text {
-  font-size: 1.5rem;
   font-weight: lighter;
-  padding: 10% 0;
-
-  @media(min-width: $breakpint-tablet) {
-    font-size: 2rem;
-  }
 
   h1 {
     font-weight: 400;
+    font-size: 26px;
+
+    @media (min-width: $breakpint-tablet) {
+      font-size: 3rem;
+    }
   }
 
   p {
     max-width: 100%;
-    margin: 2% 0;
+    margin: 5% 0;
+    font-size: 16px;
+
+    @media (min-width: $breakpint-tablet) {
+      margin: 3% 0;
+      font-size: 2rem;
+    }
   }
 }
 
@@ -174,13 +187,17 @@ section {
 }
 
 .main-btn {
-  margin: 5px;
   padding: 7px 25px;
   border: 2px solid white;
   border-radius: 3px;
   transition: 0.3s ease-in-out;
-  font-size: 1.2rem;
+  font-size: 14px;
   text-decoration: none;
+  display: inline-block;
+
+  @media (min-width: $breakpint-tablet) {
+    font-size: 1.2rem;
+  }
 
   &:hover {
     background-color: white;
@@ -210,7 +227,7 @@ section {
 
 // About Page
 #about {
-  background-color: white
+  background-color: white;
 }
 
 .about-content {
@@ -219,7 +236,7 @@ section {
   display: flex;
   flex-direction: column-reverse;
 
-  @media(min-width: $breakpint-tablet) {
+  @media (min-width: $breakpint-tablet) {
     flex-direction: row;
     margin: 0 5%;
   }
@@ -232,7 +249,7 @@ section {
   align-items: center;
   flex-direction: column;
 
-  @media(min-width: $breakpint-tablet) {
+  @media (min-width: $breakpint-tablet) {
     width: 50%;
     margin-top: 0;
   }
@@ -243,7 +260,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 2fr;
 
-  @media(min-width: $breakpint-tablet) {
+  @media (min-width: $breakpint-tablet) {
     width: 50%;
   }
 }
@@ -252,7 +269,7 @@ section {
   margin-top: 25%;
   color: rgba(10, 0, 200, 0.5);
 
-  @media(min-width: $breakpint-tablet) {
+  @media (min-width: $breakpint-tablet) {
     margin: 25%;
   }
 }
@@ -288,7 +305,7 @@ section {
   margin: 5% auto;
   color: rgb(73, 73, 73);
 
-  @media(min-width: $breakpint-tablet) {
+  @media (min-width: $breakpint-tablet) {
     width: 60%;
   }
 
@@ -308,8 +325,8 @@ section {
   color: rgb(73, 73, 73);
   background-color: rgb(245, 245, 245);
 
-  @media(min-width: $breakpint-tablet) {
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+  @media (min-width: $breakpint-tablet) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .stack-col {
@@ -330,7 +347,6 @@ section {
       flex-direction: column;
       align-items: center;
     }
-
   }
 }
 
@@ -379,7 +395,7 @@ section {
   align-items: center;
   padding: 0 5%;
 
-  @media(min-width: 1500px) {
+  @media (min-width: 1500px) {
     justify-content: flex-start;
   }
 }
@@ -454,7 +470,7 @@ section {
   form {
     width: 70%;
 
-    @media(min-width: $breakpint-tablet) {
+    @media (min-width: $breakpint-tablet) {
       width: 40%;
     }
 
@@ -494,7 +510,7 @@ section {
         border: 2px solid rgba(10, 0, 200, 0.5);
         cursor: pointer;
         background-color: white;
-        color:  rgba(10, 0, 200, 0.5);
+        color: rgba(10, 0, 200, 0.5);
       }
     }
   }
@@ -548,4 +564,3 @@ footer {
     color: rgb(73, 73, 73);
   }
 }
-
