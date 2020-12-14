@@ -36,16 +36,17 @@ const BlogPage = ({ data }) => {
 export default BlogPage
 
 export const postQuery = graphql`
-query BlogQuery {
-	allContentfulBlog(sort: { fields: [date], order: DESC }) {
-    edges {
-      node {
-        date(formatString: "DD/MM/YYYY")
-        slug
-        title
-        previewImg {
-          fluid(maxWidth: 200, quality: 100) {
-            ...GatsbyContentfulFluid
+  query BlogQuery {
+    allContentfulBlog(sort: { fields: [date], order: DESC }) {
+      edges {
+        node {
+          date(formatString: "DD/MM/YYYY")
+          slug
+          title
+          previewImg {
+            fluid(maxWidth: 200, quality: 100) {
+              ...GatsbyContentfulFluid
+            }
           }
         }
       }
