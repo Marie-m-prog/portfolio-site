@@ -1,29 +1,36 @@
 import React from "react"
 import SEO from "../components/seo"
 import PostPreview from "../components/post-preview.js"
-import { graphql } from "gatsby";
+import { graphql } from "gatsby"
 
 const BlogPage = ({ data }) => {
-  const posts = data.allContentfulBlog.edges;
+  const posts = data.allContentfulBlog.edges
 
   return (
-    <div id='blog'>
+    <div id="blog">
       <SEO title="Blog" />
       <div className="posts-container">
         <div className="header-text">
-          <a href="/"><h1 className="name">Marie W. Madsen</h1></a>
+          <a href="/">
+            <h1 className="name">Marie W. Madsen</h1>
+          </a>
           <p>Fullstack JavaScript Developer</p>
         </div>
         <div className="blog-posts-container">
           <h1 className="posts-title">Welcome to my blog!</h1>
-          <p>This is a space for me to process and share the things I've learned on my journey to become a developer</p>
+          <p>
+            This is a space for me to process and share the things I've learned
+            on my journey to become a developer
+          </p>
         </div>
-        <ul >{posts.map(post => 
-          <PostPreview node={post.node}/>
-        )}</ul>
+        <ul>
+          {posts.map(post => (
+            <PostPreview node={post.node} />
+          ))}
+        </ul>
       </div>
     </div>
-	)
+  )
 }
 
 export default BlogPage
@@ -44,5 +51,4 @@ query BlogQuery {
       }
     }
   }
-}
 `
