@@ -1,16 +1,16 @@
-require('dotenv').config()
+require("dotenv").config()
 
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-};
+}
 
-const { spaceId, accessToken } = contentfulConfig;
+const { spaceId, accessToken } = contentfulConfig
 
 if (!spaceId || !accessToken) {
   throw new Error(
-    'Contentful spaceId and the access token need to be provided.'
-  );
+    "Contentful spaceId and the access token need to be provided."
+  )
 }
 
 module.exports = {
@@ -37,8 +37,8 @@ module.exports = {
         name: `portfolio`,
         short_name: `portfolio`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#000`,
+        theme_color: `#000`,
         display: `standalone`,
         icon: `src/images/star.png`,
         include_favicon: false,
