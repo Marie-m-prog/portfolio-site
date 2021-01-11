@@ -14,48 +14,26 @@ import Stack from "./stack"
 const About = () => {
   return (
     <div>
-      <div className="main-timeline">
-        <div className="timeline">
-          <div className="icon"></div>
-          <div className="date-content">
-            <div className="date-outer">
-              <span className="date">
-                <span className="month">2 Years</span>
-                <span className="year">2013</span>
-              </span>
-            </div>
-          </div>
-          <div className="timeline-content">
-            <h5 className="title">Visual Art &amp; Design</h5>
-            <p className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
-              volutpat. Aenean interdum finibus efficitur. Praesent dapibus
-              dolor felis, eu ultrices elit molestie.
-            </p>
-          </div>
-        </div>
-        <div className="timeline">
-          <div className="icon"></div>
-          <div className="date-content">
-            <div className="date-outer">
-              <span className="date">
-                <span className="month">2 Years</span>
-                <span className="year">2013</span>
-              </span>
-            </div>
-          </div>
-          <div className="timeline-content">
-            <h5 className="title">Visual Art &amp; Design</h5>
-            <p className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
-              volutpat. Aenean interdum finibus efficitur. Praesent dapibus
-              dolor felis, eu ultrices elit molestie.
-            </p>
-          </div>
-        </div>
+      <div className="about-img-container">
+        <img src={ProfileImg} alt=""></img>
       </div>
+      <ul className="main-timeline">
+        <li className="timeline" data-date="Spring 2020">
+          <h3 className="title">School of Applied Technology</h3>
+          <p className="description">
+            {`Graduated as a full stack developer from the School of Applied technology (</salt>) in Stockholm.`}
+          </p>
+        </li>
+        <li className="timeline" data-date="2013">
+          <h3 className="title">Visual Art &amp; Design</h3>
+          <p className="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
+            volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor
+            felis, eu ultrices elit molestie.
+          </p>
+        </li>
+      </ul>
 
       <section id="about">
         <h1
